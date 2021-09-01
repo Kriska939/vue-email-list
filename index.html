@@ -11,13 +11,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- VUE-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- CSS-->
+    <link rel="stylesheet" href="./css/style.css">
     <title>Email List</title>
 </head>
 
 <body>
     <!-- VUE INIZIALIZATION-->
     <div id="app">
-        <p>{{ emailAddress }}</p>
+        <p v-for="email in emailAddress">{{ email }}</p>
     </div>
     <script src="./js/script.js"></script>
 </body>
