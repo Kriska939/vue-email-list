@@ -6,7 +6,10 @@ const app = new Vue({
         emailAddress: [],
         nEmail: 10,
     },
-    methods: {},
+    methods: {
+
+
+    },
     created() {
         for (let i = 0; i < this.nEmail; i++) {
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
